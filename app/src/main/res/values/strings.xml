@@ -2,4 +2,6 @@
     <string name="app_name">DarziVid</string>
     <string name="login">LOGIN</string>
     <string name="username">Username</string>
+    <string name="signup">Sign Up</string>
+    <string name="hpass">Password</string>
 </resources>
