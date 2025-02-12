@@ -29,8 +29,8 @@
         android:hint="@string/hpass"
         android:inputType="numberPassword"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="284dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="268dp" />
 
     <Button
         android:id="@+id/btn_login"
