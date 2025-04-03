@@ -16,14 +16,15 @@
 
         <ImageButton
             android:id="@+id/backeButton"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
             android:background="@android:color/transparent"
             android:scaleType="centerCrop"
             android:src="@drawable/arrow_left"
-            android:text="Button" />
+            android:text="Button"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView27"
@@ -31,10 +32,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/yeonsung_regular"
+            android:fontFamily="@font/lato_bold"
             android:text="Edit"
             android:textColor="@color/textColor"
-            android:textSize="20sp"
+            android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button8" />
@@ -56,7 +57,7 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/yeonsung_regular"
+                android:fontFamily="@font/lato_bold"
                 android:paddingLeft="8dp"
                 android:text="Name"
                 android:textColor="@color/black"
@@ -71,7 +72,9 @@
                 android:ems="10"
                 android:fontFamily="@font/lato_regular"
                 android:inputType="text"
-                android:textColor="@color/black" />
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -92,9 +95,10 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/yeonsung_regular"
+                android:fontFamily="@font/lato_bold"
                 android:paddingLeft="8dp"
                 android:text="Address"
+                android:textSize="20sp"
                 android:textColor="@color/black" />
 
             <EditText
@@ -108,7 +112,8 @@
                 android:ems="10"
                 android:fontFamily="@font/lato_regular"
                 android:inputType="textMultiLine"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,10 +133,14 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/yeonsung_regular"
-                android:paddingLeft="8dp"
+                android:fontFamily="@font/lato_bold"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:paddingTop="10dp"
                 android:text="Phone"
-                android:textColor="@color/black" />
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/phone"
@@ -142,7 +151,10 @@
                 android:ems="10"
                 android:fontFamily="@font/lato_regular"
                 android:inputType="phone"
-                android:textColor="@color/black" />
+                android:maxLength="10"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -162,14 +174,15 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/yeonsung_regular"
+                android:fontFamily="@font/lato_bold"
                 android:paddingLeft="8dp"
                 android:text="Payment Method"
+                android:textSize="20sp"
                 android:textColor="@color/black" />
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="250dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/cashondelivery" />
 
@@ -190,13 +203,14 @@
             app:layout_constraintTop_toBottomOf="@+id/textView27">
 
             <TextView
-                android:layout_width="40dp"
+                android:layout_width="159dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/yeonsung_regular"
+                android:fontFamily="@font/lato_bold"
                 android:paddingLeft="8dp"
                 android:text="Total Amount"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/totalAmount"
@@ -208,9 +222,11 @@
                 android:fontFamily="@font/yeonsung_regular"
                 android:gravity="end"
                 android:inputType="none"
+                android:minHeight="48dp"
                 android:paddingEnd="32dp"
                 android:textColor="@color/textColor"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
     </LinearLayout>
@@ -225,9 +241,9 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/edittextshape"
-        android:fontFamily="@font/yeonsung_regular"
+        android:fontFamily="@font/lato_bold"
         android:text="Place My Order"
         android:textAllCaps="false"
-        android:textColor="@color/textColor"
+        android:textColor="@color/white"
         android:textSize="24sp" />
 </FrameLayout>

@@ -13,7 +13,8 @@
     <color name="dark_surface">#FF1E1E1E</color>
     <color name="light_gray">#FFB3B3B3</color>
     <color name="textColor">#2C2B2B</color>
-    <color name="startColor">#53E88B</color>
-    <color name="endColor">#15BE77</color>
-    <color name="iconColor">#FEAD1D</color>
+    <color name="startColor">#284F78</color>
+    <color name="endColor">#284F78</color>
+    <color name="iconColor">#284F78</color>
+    <color name="buttonColor">#284F78</color>
 </resources>

@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:fontFamily="@font/yeonsung_regular"
+                android:fontFamily="@font/lato_regular"
                 android:text="Service Name"
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -69,7 +69,7 @@
             <TextView
                 android:id="@+id/addToCartPopuler"
                 android:layout_width="80dp"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:background="@drawable/addtocartshape"
                 android:fontFamily="@font/lato_regular"
