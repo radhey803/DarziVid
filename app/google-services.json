@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1053419956939",
+    "firebase_url": "https://darzivid-81ae0-default-rtdb.firebaseio.com",
+    "project_id": "darzivid-81ae0",
+    "storage_bucket": "darzivid-81ae0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053419956939:android:900dfabff3115247c2894e",
+        "android_client_info": {
+          "package_name": "com.example.darzividnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053419956939-5rvqeoek98iv6umlt3vqfjbvq9bvimhl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.darzividnew",
+            "certificate_hash": "66be40d89c04064b89a084c37d76ea3d1b0815d4"
+          }
+        },
+        {
+          "client_id": "1053419956939-qhet3i2i5eo2ravl1um3lpugs0g89jgr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-tuIPkGnKzQRvSZn-jrdAHTTHBu9gHXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053419956939-qhet3i2i5eo2ravl1um3lpugs0g89jgr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

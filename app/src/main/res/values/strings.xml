@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Darzivid</string>
+    <string name="next">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">1053419956939-qhet3i2i5eo2ravl1um3lpugs0g89jgr.apps.googleusercontent.com</string>
+    <string name="details">To provide you with the best Tailoring experience, we need your permission to access your device\'s location. By enabling location services, we can offer personalized Styles recommendations, accurate delivery estimates, and ensure a seamless Cloth delivery experience.\"</string>
+</resources>
