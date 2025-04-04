@@ -9,21 +9,27 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import com.bumptech.glide.Glide
+import com.example.darzividnew.Fragment.CartFragment
 import com.example.darzividnew.Model.CartItems
 import com.example.darzividnew.databinding.ActivityDetailsBinding
+import com.example.darzividnew.databinding.CartItemBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
+import com.razorpay.PaymentResultWithDataListener
 
 class DetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailsBinding
-    private var serviceName: String? = null
-    private var serviceImage: String? = null
-    private var serviceDescriptions: String? = null
-    private var serviceIngredients: String? = null
-    private var servicePrice: String? = null
+     var serviceName: String? = null
+     var serviceImage: String? = null
+     var serviceDescriptions: String? = null
+     var serviceIngredients: String? = null
+     var servicePrice: String? = null
+     lateinit var sizeSpinner: Spinner
+    private lateinit var database: FirebaseDatabase
     private lateinit var auth: FirebaseAuth
-    private var selectedSize: String = "Medium" // Default size
+     var selectedSize: String = "Medium" // Default size
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,7 +60,13 @@ class DetailsActivity : AppCompatActivity() {
         // Add to cart button click
         binding.addItemButton.setOnClickListener {
             addItemToCart()
+
         }
+
+        binding.buyNow.setOnClickListener {
+            buynow()
+        }
+
     }
 
     private fun setupSizeSpinner() {
@@ -84,16 +96,46 @@ class DetailsActivity : AppCompatActivity() {
             serviceDescriptions.toString(),
             serviceImage.toString(),
             1, // Quantity
-            selectedSize // Selected size
+            selectedSize.toString() // Selected size
         )
 
         // Save data to Firebase
         database.child("user").child(userId).child("CartItems").push().setValue(cartItem)
             .addOnSuccessListener {
-                Toast.makeText(this, "Item added to cart successfully! 😊", Toast.LENGTH_SHORT).show()
+               openCart()
+                Toast.makeText(this, "Item added to cart successfully!", Toast.LENGTH_SHORT).show()
+
             }
+
             .addOnFailureListener {
-                Toast.makeText(this, "Failed to add item to cart 😒", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Failed to add item to cart", Toast.LENGTH_SHORT).show()
             }
     }
+}
+
+public fun DetailsActivity.buynow() {
+
+    val intent = Intent(this, PayOutActivity::class.java)
+
+    // Send details of this single item
+    intent.putStringArrayListExtra("serviceItemName", arrayListOf(serviceName ?: ""))
+    intent.putStringArrayListExtra("serviceItemPrice", arrayListOf(servicePrice ?: "0"))
+    intent.putStringArrayListExtra("serviceItemImage", arrayListOf(serviceImage ?: ""))
+    intent.putStringArrayListExtra("serviceItemDescription", arrayListOf(serviceDescriptions ?: ""))
+    intent.putStringArrayListExtra("serviceItemIngredient", arrayListOf(serviceIngredients ?: ""))
+    intent.putIntegerArrayListExtra("serviceItemQuantities", arrayListOf(1)) // Default quantity 1
+
+    startActivity(intent)
+
+
+}
+
+private fun DetailsActivity.openCart() {
+    val fragment = CartFragment()
+
+    // Optional: Add to back stack so user can press back
+    supportFragmentManager.beginTransaction()
+        .replace(android.R.id.content, fragment) // or your specific container
+        .addToBackStack(null)
+        .commit()
 }

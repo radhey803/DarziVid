@@ -6,5 +6,6 @@ data class CartItems(
     var   serviceDescription: String ?=null,
     var   serviceImage: String ?=null,
     var   serviceQuantity: Int ?=null,
-    var   servicengredients:String?= null
+    var   servicengredients:String?= null,
+    var   selectedsize: String?=null
 )

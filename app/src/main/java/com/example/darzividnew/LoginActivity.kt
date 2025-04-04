@@ -71,6 +71,7 @@ class LoginActivity : AppCompatActivity() {
         binding.googleButton.setOnClickListener {
             val signInIntent = googleSignInClient.signInIntent
             launcher.launch(signInIntent)
+
         }
     }
     //
@@ -84,7 +85,7 @@ class LoginActivity : AppCompatActivity() {
                 auth.signInWithCredential(credential).addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(this, "Sign-in SuccessFull 😁", Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this, ChooseLocationActivity::class.java))
+                        startActivity(Intent(this, MainActivity::class.java))
                         finish()
                     } else {
                         Toast.makeText(this, "Sign in field 😒", Toast.LENGTH_SHORT).show()

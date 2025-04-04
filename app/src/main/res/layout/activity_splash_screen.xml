@@ -38,7 +38,7 @@
         android:fontFamily="@font/lato_regular"
         android:text="Measure,Design, and Wear, We Make it Easy"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />

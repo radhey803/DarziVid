@@ -8,30 +8,18 @@
     android:forceDarkAllowed="true"
     tools:context=".DetailsActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
-        android:background="@android:color/transparent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrow_left" />
-
     <TextView
         android:id="@+id/detailserviceName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-       android:fontFamily="@font/lato_bold"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/lato_bold"
         android:text="Style Name"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView4"
@@ -72,10 +60,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:fontFamily="@font/lato_regular"
         android:text="Lorem ipsum dolor sit amet,  consectetur adipiscing elit,  sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. Ut enim ad "
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:fontFamily="@font/lato_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView30"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
@@ -111,11 +99,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato_regular"
         android:text="1 item \n second item \n 3rd item"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:fontFamily="@font/lato_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView32"
@@ -123,18 +111,35 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addItemButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
         android:background="@drawable/addtocartshape"
+        android:elevation="5dp"
         android:fontFamily="@font/lato_bold"
         android:text="Add To Cart"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buyNow"
+        app:layout_constraintTop_toBottomOf="@+id/sizeSpinner" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buyNow"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/addtocartshape"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Buy Now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/addItemButton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sizeSpinner" />
 
