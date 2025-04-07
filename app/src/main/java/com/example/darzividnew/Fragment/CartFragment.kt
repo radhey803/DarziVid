@@ -48,9 +48,14 @@ class CartFragment : Fragment() {
         retrieveCartItems()
 
         binding.proceedButton.setOnClickListener {
-            // get order items details before proceeding to check out
-            getOrderItemsDetail()
+            if (serviceNames.isEmpty()) {
+                Toast.makeText(requireContext(), "Cart is empty. Please add items before proceeding.", Toast.LENGTH_SHORT).show()
+            } else {
+                // Get order items details before proceeding to check out
+                getOrderItemsDetail()
+            }
         }
+
         return binding.root
     }
 
