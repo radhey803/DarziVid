@@ -27,5 +27,16 @@
 - **Architecture**: MVVM (Model-View-ViewModel)
 
 🖼️ Screenshots
-![Screenshot_20250405_061955_Darzivid](https://github.com/user-attachments/assets/cb9c2f6c-f8ef-43de-a929-814dd72431be)
+![image](https://github.com/user-attachments/assets/60d71a44-72a4-4b35-a07d-11d70b44c9fb)
+![image](https://github.com/user-attachments/assets/686c76ba-fdc5-4ddf-a7d7-85ebfa2e1bc3)
+![image](https://github.com/user-attachments/assets/cc67e527-fa8e-4676-8dd8-bde041bb6dd9)
+![image](https://github.com/user-attachments/assets/ad49dba8-bed8-46d2-a9d0-5cad29a4b75c)
+![image](https://github.com/user-attachments/assets/d4f3256c-d815-4228-a975-fdca690e61c7)
+![image](https://github.com/user-attachments/assets/70bcec60-6715-4152-abc1-6570dc5e9a56)
+
+
+
+
+
+
 
