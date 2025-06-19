@@ -1,7 +1,6 @@
 # DarziVid ✂️📱
 
-**DarziVid** is a mobile tailoring service app built using **Kotlin** and **Firebase**. It allows customers to place tailoring orders, make payments, and track order status. Admins can receive real-time notifications about new orders, even when the app is closed.
-
+**DarziVid** is a full-stack Android application that selling Stitched Clothes . Built using Kotlin and Firebase, it allows customers to place clothing orders, select sizes , make secure payments, and track order status in real-time. The app includes a dedicated admin panel for managing orders, dispatching updates, and sending notifications.
 ## 🔧 Features
 
 ### Customer Side
